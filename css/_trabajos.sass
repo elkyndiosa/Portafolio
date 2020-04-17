@@ -1,0 +1,99 @@
+main
+    .trabajos
+        z-index: 1
+        width: 100%
+        margin: 0px
+        h3
+            color: #FE9A2E
+            position: relative
+            font-family: 'Roboto'
+            font-weight: 700
+            font-size: 1.3em
+            right: 50px
+            margin-top: 60px
+            text-align: center
+            opacity: 0
+            transition: all 2s
+            text-transform: uppercase
+        p
+            position: relative
+            text-align: center
+            color: #ffffff
+            margin-bottom: 60px
+            right: 50px
+            opacity: 0
+            transition: all 2s
+        .trabajo
+            position: relative
+            right: -100px
+            opacity: 0
+            overflow: hidden
+            padding: 0
+            margin: 0
+            width: 100%
+            img
+                z-index: 1
+                overflow: hidden
+                transform: scale(1)
+                transition: 1s
+                width: 100%
+                &:hover
+                    transform: scale(1.2)
+                    opacity: .3
+                &:hover ~ .text-card
+                    opacity: 1
+                    transform: translate(0px, -68px)
+            .text-card
+                position: absolute
+                text-align: center
+                font-size: .8em
+                padding: 15px
+                color: #FE9A2E
+                background: rgba(#000, .5 )
+                opacity: 0
+                width: 100%
+                margin-bottom: 0px
+                z-index: 2
+                transition: all 1s
+    .contactemos
+        height: 200px
+        width: 100%
+        background: url(../img/fondo2.jpg) #000
+        background-position: center 0
+        background-size: cover
+        background-attachment: fixed
+        margin-left: -20px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 40px
+        margin: 0px
+        box-shadow: inset 1px 0px 14px 4px rgba(0,0,0,0.54)
+        h3
+            height: 20px
+            width: 100%
+            color: #FE9A2E
+            font-family: 'Roboto'
+            font-weight: 700
+            font-size: 1.5em
+            text-align: center
+            opacity: 1
+            transition: all 2s
+            text-transform: uppercase
+            mix-blend-mode: multiply
+        .text1
+            width: 100%
+            color: #20201c
+            font-family: 'Roboto'
+            font-weight: 300
+            font-size: 1em
+            font-style: italic
+            text-align: center
+            opacity: 1
+            transition: all .3s
+            cursor: pointer
+            mix-blend-mode: multiply
+            &:hover
+                color: #FE9A2E
+                
